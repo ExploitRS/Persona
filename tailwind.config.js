@@ -15,6 +15,7 @@ module.exports = {
             light: 'var(--cy-blue-light)',
             mid: 'var(--cy-blue-mid)',
             dark: 'var(--cy-blue-dark)',
+            border: 'var(--cy-blue-border)',
           },
         },
         // MidNightBlue: '0a0c2e',
