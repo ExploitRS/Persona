@@ -8,24 +8,28 @@
         --cy-blue-light: #d1f7ff;
         --cy-blue-mid: #005678;
         --cy-blue-dark: #01012b;
+        --cy-blue-border: #125b78;
     }
 }
 
 html, body, #___gatsby {
     height: 100%;
     width: 100%;
+    background-color: var(--cy-blue-dark);
 }
 
 html {
     margin: 0;
     padding: 0;
     border: none;
+    background-color: var(--cy-blue-dark);
 }
 
 body {
     height:100%;
     width: 100%;
     margin: 0;
+    background-color: var(--cy-blue-dark);
 }
 
 div[role="group"][tabindex] {
