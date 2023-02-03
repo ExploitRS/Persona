@@ -1,6 +1,8 @@
-import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
-import { CardListProps } from "../components/CardList"
+import * as React from "react";
+import type { HeadFC, PageProps } from "gatsby";
+import Nav from "../components/Nav";
+import { NavProps } from "../components/Nav";
+import { CardListProps } from "../components/CardList";
 import CardList from "../components/CardList"
 
 // const pageStyles = {
@@ -204,7 +206,8 @@ const members = [
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="bg-cy-blue-dark h-full w-full mx-none px-none">
+    <main className="bg-cy-blue-dark h-full w-full mx-none px-8">
+      <Nav title="Exploit.RS"></Nav>
       <CardList members={members}></CardList>
     </main>
   )
