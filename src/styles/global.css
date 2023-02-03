@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --cy-red-light: #ff2a6d;
+        --cy-blue-light: #d1f7ff;
+        --cy-blue-mid: #005678;
+        --cy-blue-dark: #01012b;
+    }
+}
+
+html, body, #___gatsby {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    height:100%;
+    width: 100%;
+    margin: 0;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
