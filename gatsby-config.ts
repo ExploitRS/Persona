@@ -10,10 +10,24 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `avatars`,
+    //     path: `${__dirname}/content/avatars`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `config`,
+    //     path: `${__dirname}/content/config`,
+    //   },
+    // },
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
-    'gatsby-transfomer-sharp',
+    // 'gatsby-transfomer-sharp',
   ],
 }
 
