@@ -24,10 +24,36 @@ const config: GatsbyConfig = {
         path: `${__dirname}/content/config`,
       },
     },
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: 'gatsby-remark-responsive-iframe',
+    //         options: {
+    //           wrapperStyle: 'margin-bottom: 1rem',
+    //         },
+    //       },
+    //       {
+    //         resolve: 'gatsby-remark-images',
+    //         options: {
+    //           maxWidth: 1140,
+    //           quality: 90,
+    //           linkImagesToOriginal: false,
+    //         },
+    //       },
+    //       'gatsby-remark-prismjs',
+    //       'gatsby-remark-copy-linked-files',
+    //       'gatsby-remark-smartypants',
+    //       'gatsby-transformer-sharp',
+    //       'gatsby-transformer-yaml',
+    //     ],
+    //   },
+    // },
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
-    'gatsby-transfomer-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
   ],
 }
