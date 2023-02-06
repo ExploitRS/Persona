@@ -3,7 +3,9 @@ import type { HeadFC, PageProps } from "gatsby";
 import Nav from "../components/Nav";
 import { NavProps } from "../components/Nav";
 import { CardListProps } from "../components/CardList";
-import CardList from "../components/CardList"
+import Persona from "../components/CardList"
+import { StaticImage } from "gatsby-plugin-image";
+import { AvatarProps } from "../components/Avatar";
 
 // const pageStyles = {
 //   color: "#232129",
@@ -191,24 +193,17 @@ import CardList from "../components/CardList"
 //     </main>
 //   )
 // }
-const members = [
-  {
-    username: "nil",
-    img_src: "nil.gif",
-    is_public: true,
-  },
-  {
-    username: "power",
-    img_src: "power.png",
-    is_public: false,
-  }
-]
+
+export function Dino() {
+    return <StaticImage src="../images/nil.gif" alt="" />
+}
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main className="bg-cy-blue-dark h-full w-full mx-none px-8">
       <Nav title="Exploit.RS"></Nav>
-      <CardList members={members}></CardList>
+      {/* <CardList members={members}></CardList> */}
+      <Persona></Persona>
     </main>
   )
 }
