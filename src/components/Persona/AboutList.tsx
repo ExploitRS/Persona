@@ -8,7 +8,7 @@ export interface CardListProps {
     members: Array<CardProps>
 }
 
-export const Persona = () => {
+export const AboutList = () => {
     const data = useStaticQuery(graphql`
         {
             allAvatarsYaml {
