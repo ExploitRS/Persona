@@ -1,0 +1,12 @@
+- username: 'nil'
+  email: 'nil@exploit.rs'
+  avatar: '../avatars/nil.png'
+  is_public: true
+- username: 'power'
+  email: 'power@exploit.rs'
+  is_public: true
+  avatar: '../avatars/nil.png'
+- username: 'explit.rs'
+  email: 'power@exploit.rs'
+  is_public: true
+  avatar: '../avatars/nil.png'
