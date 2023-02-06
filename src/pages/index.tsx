@@ -5,7 +5,6 @@ import { NavProps } from "../components/Nav";
 import { CardListProps } from "../components/CardList";
 import Persona from "../components/CardList"
 import { StaticImage } from "gatsby-plugin-image";
-import { AvatarProps } from "../components/Avatar";
 
 // const pageStyles = {
 //   color: "#232129",
@@ -193,10 +192,6 @@ import { AvatarProps } from "../components/Avatar";
 //     </main>
 //   )
 // }
-
-export function Dino() {
-    return <StaticImage src="../images/nil.gif" alt="" />
-}
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
