@@ -2,11 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 export interface FooterProps {
+    year: string,
+    title: string,
     url: string,
 }
-const creditMark = '© '
 
-export const Footer = ({ year, title, url }) => {
+export const Footer: React.FC<FooterProps> = ({ year, title, url }) => {
+    const creditMark = '© '
+
     return (
         <footer className='p-4 bg-cy-blue-dark sm:p-6'>
             <hr className='my-6 border-gray-200 sm:mx-auto lg:my-8'/>
