@@ -1,3 +1,3 @@
-export * from './About';
-export * from './AboutList';
-export * from './Full';
+export * as About from './About';
+export * as AboutList from './AboutList';
+export * as Full from './Full';
