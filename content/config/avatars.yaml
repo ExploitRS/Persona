@@ -1,12 +1,18 @@
 - username: 'nil'
+  alias: 'Luca Todesco'
   email: 'nil@exploit.rs'
+  status: 'Looking a engineering job as a part-time'
   avatar: '../avatars/nil.png'
   is_public: true
 - username: 'power'
+  alias: 'Power'
   email: 'power@exploit.rs'
+  status: 'medical'
   is_public: true
   avatar: '../avatars/nil.png'
-- username: 'explit.rs'
-  email: 'power@exploit.rs'
+- username: 'exploit.rs'
+  alias: 'Exploit.RS'
+  email: 'me@exploit.rs'
+  status: 'Bot'
   is_public: true
   avatar: '../avatars/nil.png'
