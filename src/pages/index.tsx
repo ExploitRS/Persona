@@ -1,10 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import Nav from "../components/Nav";
-import { NavProps } from "../components/Nav";
-import { CardListProps } from "../components/CardList";
-import Persona from "../components/CardList"
-import { StaticImage } from "gatsby-plugin-image";
+import PersonaAboutListContainer from "../containers/PersonaAboutListContainer";
+import { Layout } from "../layouts";
 
 // const pageStyles = {
 //   color: "#232129",
@@ -195,11 +192,9 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="bg-cy-blue-dark h-full w-full mx-none px-8">
-      <Nav title="Exploit.RS"></Nav>
-      {/* <CardList members={members}></CardList> */}
-      <Persona></Persona>
-    </main>
+    <Layout>
+      <PersonaAboutListContainer />
+    </Layout>
   )
 }
 
