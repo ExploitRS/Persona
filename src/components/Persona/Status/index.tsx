@@ -1,6 +1,8 @@
 import React from "react"
 import { ContactProps } from "./Contacts";
 import { SkillProps } from "./Skills";
+import Contacts from "./Contacts";
+import Skills from "./Skills";
 
 export interface StatusProps {
     contacts?: ContactProps,
@@ -40,6 +42,14 @@ const Status: React.FC<StatusProps> = (props: StatusProps) => {
                    </li>
                 )}
             </ul>
+            <div id="fullWidthTabContent" className="border-t border-gray-200">
+                { contacts && (
+                    <Contacts { ...contacts } />
+                )}
+                { skills && (
+                    <Skills { ...skills } />
+                )}
+            </div>
         </div>
     )
 };
