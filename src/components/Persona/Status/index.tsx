@@ -10,6 +10,7 @@ export interface StatusProps {
 const Status: React.FC<StatusProps> = (props: StatusProps) => {
     const contacts = props.contacts;
     const skills = props.skills;
+
     return(
         <div className="w-full bg-cy-blue-mid rounded-lg shadow">
             <div className="sm:hidden">
