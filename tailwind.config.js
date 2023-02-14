@@ -26,6 +26,7 @@ module.exports = {
             'green': {
               light: 'var(--wild-kingdom-bg-green-light)',
               dark: 'var(--wild-kingdom-bg-green-dark)',
+            'gradation': 'var(--wild-kingdom-bg-gradation)',
             },
           },
           'text': {
