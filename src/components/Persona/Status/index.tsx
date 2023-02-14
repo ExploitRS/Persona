@@ -12,7 +12,7 @@ const Status: React.FC<StatusProps> = (props: StatusProps) => {
     const skills = props.skills;
 
     return(
-        <div className="w-full bg-cy-blue-mid rounded-lg shadow">
+        <div className="w-full bg-cy-blue-mid rounded-lg shadow mt-10">
             <div className="sm:hidden">
                 <label htmlFor="tabs" className="sr-only">Select tab</label>
                 <select name="" id="tabs" className="border-b text-cy-blue-light text-sm rounded-t-lg focus:cy-red-light block w-full p-2.5">
