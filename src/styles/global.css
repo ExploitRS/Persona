@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("glitch.css");
 
 @layer base {
     :root {
@@ -9,6 +10,17 @@
         --cy-blue-mid: #005678;
         --cy-blue-dark: #01012b;
         --cy-blue-border: #125b78;
+        --wild-kingdom-front-green: #061A13;
+        --wild-kingdom-bg-green-light: #11312B;
+        --wild-kingdom-bg-green-dark: #09211D;
+        --wild-kingdom-text-green: #65DCC2;
+        --wild-kingdom-text-fade-green: #A9C5BE;
+        --wild-kingdom-text-white: #ffffff;
+        --wild-kingdom-gradation-green: #65DCC2;
+        --wild-kingdom-gradation-purple: #8F9FD1;
+        --wild-kingdom-shadow-purple: #2A2844;
+        --wild-kingdom-icon-red: #E84B65;
+        --wild-kingdom-icon-pumpkin: #F4BA54;
     }
 }
 

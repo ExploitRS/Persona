@@ -18,8 +18,37 @@ module.exports = {
             border: 'var(--cy-blue-border)',
           },
         },
+        'wild-kingdom': {
+          'front': {
+            green: 'var(--wild-kingdom-front-green)',
+          },
+          'bg': {
+            'green': {
+              light: 'var(--wild-kingdom-bg-green-light)',
+              dark: 'var(--wild-kingdom-bg-green-dark)',
+            },
+          },
+          'text': {
+            green: 'var(--wild-kingdom-text-green)',
+            white: 'var(--wild-kingdom-text-white)',
+            fade: {
+              green: 'var(--wild-kingdom-text-fade-green)',
+            },
+          },
+          'gradation': {
+            green: 'var(--wild-kingdom-gradation-green)',
+            purple: 'var(--wild-kingdom-gradation-purple)',
+          },
+          shadow: {
+            purple: 'var(--wild-kingdom-shadow-purple)',
+          },
+          icon: {
+            red: 'var(--wild-kingdom-icon-red)',
+            pumpkin: 'var(--wild-kingdom-icon-pumpkin)',
+          },
+        },
         // MidNightBlue: '0a0c2e',
-      }
+      },
     },
   },
   plugins: [],
