@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const Nav = (props: NavProps) => {
     const title = props.title;
     return (
-        <nav className='sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto opacity-80 top-0 sticky z-50'>
+        <nav className='bg-cy-blue-dark sticky-nav flex justify-between items-center max-w-4xl w-full p-8 my-0 md:my-8 mx-auto opacity-80 top-0 sticky z-50'>
             <div className='container flex flex-wrap items-center justify-between mx-auto'>
                 <Link to="#" className='flex items-center'>
                     {/* <img src="logo.svg" className='h-6 mr-3 sm:h-10' alt="logo of Exploit.RS" /> */}
