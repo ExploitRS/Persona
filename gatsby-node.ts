@@ -1,9 +1,8 @@
-// import { GatsbyNode } from "gatsby";
-// import { IGatsbyImageData } from "gatsby-plugin-image";
-// import { resolve } from 'path';
-const path = require('path');
+import { GatsbyNode } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
+import { resolve } from 'path';
 
-exports.createPages = async ({ actions, graphql }) => {
+export const createPages = async ({ actions, graphql }) => {
     const { createPage} = actions;
 
     const { data } = await graphql(`
@@ -38,11 +37,10 @@ exports.createPages = async ({ actions, graphql }) => {
             // email,
             // avatar
         } = node;
-        console.log(username)
 
         actions.createPage({
             path: username,
-            component: path.resolve('./templates/persona.tsx'),
+            component: resolve('./templates/persona.tsx'),
             context: { username },
         })
     })
