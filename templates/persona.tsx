@@ -2,22 +2,39 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import PersonaFull, { PersonaFullProps } from '../src/components/Persona/Full';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
-import { Layout } from '../src/layouts/layout';
+import { Layout } from '../src/layouts';
+import { StatusProps } from '../src/components/Persona/Status';
+import { GatsbyImageProps } from 'gatsby-plugin-image';
 
 export interface PersonaFullContainerQueryData {
     avatarsYaml: PersonaFullProps
 }
 
+const status: StatusProps = {
+    contacts: {
+        telegram: {
+            label: "unittype",
+            url: "https://t.me/unittype"
+        },
+    },
+    skills: {
+        languages: ["Rust", "Nim"],
+    },
+}
+
 const PersonaFullContainer = ({ data } ) => {
     const prsn = data.avatarsYaml
+    console.log(data.avatarsYaml.avatar.childImageSharp.fluid)
+
     return (
         <Layout>
             <PersonaFull
                 username={ prsn.username }
                 alias={ prsn.alias }
-                status={ prsn.status }
+                bio={ prsn.status }
                 email={ prsn.email }
                 avatar={ prsn.avatar }
+                status={ status }
             />
         </Layout>
     )
@@ -34,12 +51,13 @@ export const pageQuery = graphql`
             avatar {
                 childImageSharp {
                     gatsbyImageData(
-                        width: 100,
-                        height: 100,
+                        width: 800,
+                        height: 800,
                         formats: AUTO,
                         placeholder: BLURRED
-                    )
-                    # fluid(maxWidth: 120, maxHeight: 120) {
+                    ),
+                    # gatsbyImageData: GatsbyImageProps,
+                    # fluid(maxWidth: 800) {
                     #     ...GatsbyImageSharpFixed
                     # }
                 }
