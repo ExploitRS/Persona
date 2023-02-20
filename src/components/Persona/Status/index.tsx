@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactComponentElement, useState } from "react"
 import { ContactProps } from "./Contacts";
 import { SkillProps } from "./Skills";
 import Contacts from "./Contacts";
@@ -8,49 +8,50 @@ export interface StatusProps {
     contacts?: ContactProps,
     skills?: SkillProps,
 }
+interface TabProps {
+    title: string,
+}
 
 const Status: React.FC<StatusProps> = (props: StatusProps) => {
     const contacts = props.contacts;
     const skills = props.skills;
+    const tabs = [
+        {
+            title: "Contacts",
+        },
+        {
+            title: "Skills",
+        }
+    ]
+    const [active, setActive] = useState<string>(tabs[0].title);
 
     return(
-        <div className="w-full bg-cy-blue-mid rounded-lg shadow mt-10">
-            <div className="sm:hidden">
-                <label htmlFor="tabs" className="sr-only">Select tab</label>
-                <select name="" id="tabs" className="border-b text-cy-blue-light text-sm rounded-t-lg focus:cy-red-light block w-full p-2.5">
-                    { contacts && (
-                        <option>Contacts</option>
+        <>
+            <div className="w-full bg-wild-kingdom-front-green rounded-lg shadow mt-10 opacity-80 m-auto max-w-xl">
+                <ul className="flex flex-wrap text-sm font-medium text-center text-wild-kingdom-text-green rounded-t-lg" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
+                    { tabs.map((tab) => (
+                        <div className="w-full">
+                            <button
+                                type="button"
+                                key={ tab.title }
+                                active={ active === tab.title}
+                                onClick={() => setActive(tab.title)}
+                                className="inline-block p-4 text-wild-kingdom-text-green rounded-tl-lg hover:opacity-30">
+                                    { tab.title }
+                            </button>
+                        </div>
+                    ))}
+                </ul>
+                <div id="defaultTabContent" className="border-t-2 gradient-border">
+                    {  active === 'Contacts' && (
+                        <Contacts { ...contacts } />
+                    )},
+                    {  active === 'Skills' && (
+                        <Skills { ...skills } />
                     )}
-                    { skills && (
-                        <option>Skills</option>
-                    )}
-                </select>
+                </div>
             </div>
-            <ul className="hidden text-sm font-medium text-center divide-x divide-cy-blue-light rounded-lg sm:flex" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
-                { contacts && (
-                    <li className="w-full">
-                        <button id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="true" className="inline-block w-full p-4 rounded-tl-lg bg-cy-blue-mid focus:outline-none">
-                            Contacts
-                        </button>
-                    </li>
-                )}
-                { skills && (
-                    <li className="w-full">
-                        <button id="skills-tab" data-tabs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false" className="inline-block w-full p-4 bg-cy-blue-mid hover:bg-cy-blue-mid focus:outline-none">
-                            Skills
-                        </button>
-                   </li>
-                )}
-            </ul>
-            <div id="fullWidthTabContent" className="border-t border-gray-200">
-                { contacts && (
-                    <Contacts { ...contacts } />
-                )}
-                { skills && (
-                    <Skills { ...skills } />
-                )}
-            </div>
-        </div>
+        </>
     )
 };
 
