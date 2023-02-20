@@ -13,7 +13,7 @@
         --wild-kingdom-front-green: #061A13;
         --wild-kingdom-bg-green-light: #11312B;
         --wild-kingdom-bg-green-dark: #09211D;
-        --wild-kingdom-bg-gradation: linear-gradation(to, right, var(--wild-kingdom-bg-green-light), var(var(--wild-kingdom-bg-green-dark)))
+        /* --wild-kingdom-bg-gradation: linear-gradation(to, right, var(--wild-kingdom-bg-green-light), var(var(--wild-kingdom-bg-green-dark))) */
         --wild-kingdom-text-green: #65DCC2;
         --wild-kingdom-text-fade-green: #A9C5BE;
         --wild-kingdom-text-white: #ffffff;
@@ -28,23 +28,28 @@
 html, body, #___gatsby {
     height: 100%;
     width: 100%;
-    background-color: var(--wild-kingdom-bg-gradation);
+    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
 }
 
 html {
     margin: 0;
     padding: 0;
     border: none;
-    background-color: var(--wild-kingdom-bg-gradation);
+    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
 }
 
 body {
     height:100%;
     width: 100%;
     margin: 0;
-    background-color: var(--wild-kingdom-bg-gradation);
+    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
 }
 
 div[role="group"][tabindex] {
     height: 100%;
+}
+
+.gradient-border {
+    border-image: linear-gradient(to right, var(--wild-kingdom-gradation-green), var(--wild-kingdom-gradation-purple)) 1;
+    border-style: solid;
 }
