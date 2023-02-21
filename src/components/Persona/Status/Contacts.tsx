@@ -4,10 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faTelegram } from '@fortawesome/free-solid-svg-icons';
 import { icons } from '../../../utils/font';
 
-// export interface ContactsProps {
-//     contacts: Contact[],
-// }
-
 export interface ContactsProps {
     contacts: Contact[];
 }
