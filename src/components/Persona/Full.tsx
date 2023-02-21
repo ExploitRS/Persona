@@ -1,8 +1,7 @@
 import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
-import { StatusProps } from './Status';
 import Status from './Status';
-import { ContactsProps, Contact } from './Status/Contacts';
+import { Contact } from './Status/Contacts';
 import { SkillProps } from './Status/Skills';
 
 export interface PersonaFullProps {
@@ -18,7 +17,6 @@ export interface PersonaFullProps {
             fluid: IGatsbyImageData,
         }
     },
-    // status?: StatusProps,
     contacts?: Contact[],
     skills?: SkillProps,
 }
