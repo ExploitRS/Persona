@@ -3,6 +3,10 @@
   email: 'nil@exploit.rs'
   status: 'Looking a engineering job as a part-time'
   avatar: '../avatars/nil.png'
+  location: 'Tokyo ⇄ Cyberia'
+  org: 'Exploit.RS'
+  company: ''
+  education: 'Keio Uni'
   is_public: true
   contacts:
     - kind: 'email'
