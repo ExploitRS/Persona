@@ -5,20 +5,30 @@
   avatar: '../avatars/nil.png'
   is_public: true
   contacts:
+    - kind: 'email'
+      label: 'E-mail'
+      id: 'nillability@protonmail.com'
+      url: 'mailto:nillability@protonmail.com'
+      quickly: true
     - kind: 'telegram'
       label: 'Telegram'
       id: 'unittype'
       url: 'https://t.me/unittype'
       quickly: true
-    - kind: 'github'
-      label: 'Telegram'
-      id: 'unittype'
-      url: 'https://t.me/unittype'
+    - kind: 'xmpp'
+      label: 'XMPP'
+      id: 'unsafe@xmpp.is'
+      url: 'xmpp:unsafe@xmpp.is'
       quickly: true
-    - kind: 'noabug'
+    - kind: 'github'
+      label: 'GitHub'
+      id: 'nonnil'
+      url: 'https://github.com/nonnil'
+      quickly: true
+    - kind: 'notabug'
       label: 'NotABug'
-      id: 'nulled'
-      url: 'https://notabug.org/nulled'
+      id: 'nl'
+      url: 'https://notabug.org/nl'
       quickly: false
 
 - username: 'power'
