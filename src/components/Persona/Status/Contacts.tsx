@@ -53,7 +53,6 @@ const Contacts: React.FC<ContactsProps> = (props) => {
                     <a href={con.url} target="_blank">
                         <div className="text-wild-kingdom-text-green-light flex flex-col items-center justify-center">
                             <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} />
-                            {/* <dt className="text-3">{ con.label }</dt> */}
                             <dd className="text-cy-blue-light text-sm leading-5 mt-1">{`${ con.id }`}</dd>
                         </div>
                     </a>
