@@ -1,20 +1,18 @@
 import React, { ReactComponentElement, useState } from "react"
-import { ContactProps } from "./Contacts";
+import { Contact, ContactsProps } from "./Contacts";
 import { SkillProps } from "./Skills";
 import Contacts from "./Contacts";
 import Skills from "./Skills";
 
 export interface StatusProps {
-    contacts?: ContactProps,
+    contacts?: Contact[],
     skills?: SkillProps,
 }
 interface TabProps {
     title: string,
 }
 
-const Status: React.FC<StatusProps> = (props: StatusProps) => {
-    const contacts = props.contacts;
-    const skills = props.skills;
+const Status: React.FC<StatusProps> = ({ contacts, skills }) => {
     const tabs = [
         {
             title: "Contacts",
@@ -25,12 +23,16 @@ const Status: React.FC<StatusProps> = (props: StatusProps) => {
     ]
     const [active, setActive] = useState<string>(tabs[0].title);
 
+    const cons = {
+        contacts: contacts,
+    }
+
     return(
         <>
             <div className="w-full bg-wild-kingdom-front-green rounded-lg shadow mt-10 opacity-80 m-auto max-w-xl">
-                <ul className="flex flex-wrap text-sm font-medium text-center text-wild-kingdom-text-green rounded-t-lg" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
+                <ul className="flex divide-x text-sm font-medium text-center text-wild-kingdom-text-green rounded-t-lg" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
                     { tabs.map((tab) => (
-                        <div className="w-full">
+                        <li className="w-full">
                             <button
                                 type="button"
                                 key={ tab.title }
@@ -39,12 +41,12 @@ const Status: React.FC<StatusProps> = (props: StatusProps) => {
                                 className="inline-block p-4 text-wild-kingdom-text-green rounded-tl-lg hover:opacity-30">
                                     { tab.title }
                             </button>
-                        </div>
+                        </li>
                     ))}
                 </ul>
-                <div id="defaultTabContent" className="border-t-2 gradient-border">
+                <div id="defaultTabContent" className="border-t-2 gradient-border px-2">
                     {  active === 'Contacts' && (
-                        <Contacts { ...contacts } />
+                        <Contacts { ...cons } />
                     )},
                     {  active === 'Skills' && (
                         <Skills { ...skills } />
