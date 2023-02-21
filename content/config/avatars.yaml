@@ -4,6 +4,23 @@
   status: 'Looking a engineering job as a part-time'
   avatar: '../avatars/nil.png'
   is_public: true
+  contacts:
+    - kind: 'telegram'
+      label: 'Telegram'
+      id: 'unittype'
+      url: 'https://t.me/unittype'
+      quickly: true
+    - kind: 'github'
+      label: 'Telegram'
+      id: 'unittype'
+      url: 'https://t.me/unittype'
+      quickly: true
+    - kind: 'noabug'
+      label: 'NotABug'
+      id: 'nulled'
+      url: 'https://notabug.org/nulled'
+      quickly: false
+
 - username: 'power'
   alias: 'Power'
   email: 'power@exploit.rs'
