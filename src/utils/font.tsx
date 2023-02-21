@@ -4,13 +4,17 @@ import {
     faBtc,
 } from '@fortawesome/free-brands-svg-icons';
 import {
-    faMailBulk,
+    faEnvelope,
+    faLightbulb,
+    faSpider,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const icons = {
     telegram: faTelegram,
-    email: faMailBulk,
+    email: faEnvelope,
+    xmpp: faLightbulb,
     github: faGithub,
+    notabug: faSpider,
     btc: faBtc,
-    notabug: "fa-solid fa-spider-black-widow"
+    
 }
