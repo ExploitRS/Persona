@@ -42,9 +42,6 @@ export interface Warp {
 
 const Contacts: React.FC<ContactsProps> = (props) => {
     const { contacts: cons } = props;
-    console.log('typeof')
-    console.log(typeof(cons))
-    console.log(cons)
 
     return(
         <div className="p-4 bg-wild-kingdom-front-green text-wild-kingdom-text-green rounded-lg md:p-8" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
