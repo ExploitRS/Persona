@@ -48,13 +48,17 @@ const Contacts: React.FC<ContactsProps> = (props) => {
 
     return(
         <div className="p-4 bg-wild-kingdom-front-green text-wild-kingdom-text-green rounded-lg md:p-8" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-            { cons.map((con) => (
-                <div className="text-wild-kingdom-text-green-light">
-                    <FontAwesomeIcon icon={icons[con.kind]} />
-                    {/* <div className="text-cy-blue-light">{ con.telegram.label }</div>
-                    <div>{ con.telegram.url }</div> */}
-                </div>
-            ))}
+            <dl className="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto sm:grid-cols-3">
+                { cons.map((con) => (
+                    <a href={con.url} target="_blank">
+                        <div className="text-wild-kingdom-text-green-light flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} />
+                            {/* <dt className="text-3">{ con.label }</dt> */}
+                            <dd>{`${ con.id }`}</dd>
+                        </div>
+                    </a>
+                ))}
+            </dl>
         </div>
     )
 }
