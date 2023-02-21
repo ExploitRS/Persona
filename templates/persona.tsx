@@ -16,15 +16,7 @@ const PersonaFullContainer = ({ data } ) => {
 
     return (
         <Layout>
-            <PersonaFull
-                username={ prsn.username }
-                alias={ prsn.alias }
-                bio={ prsn.status }
-                email={ prsn.email }
-                avatar={ prsn.avatar }
-                contacts={ prsn.contacts }
-                // status={ status }
-            />
+            <PersonaFull { ...prsn } />
         </Layout>
     )
     console.log(data);
@@ -36,7 +28,10 @@ export const pageQuery = graphql`
             username
             alias
             status
-            email
+            location
+            org
+            company
+            education
             avatar {
                 childImageSharp {
                     gatsbyImageData(
