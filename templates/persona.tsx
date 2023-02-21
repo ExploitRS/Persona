@@ -10,18 +10,6 @@ export interface PersonaFullContainerQueryData {
     avatarsYaml: PersonaFullProps
 }
 
-// const status: StatusProps = {
-//     contacts: {
-//         telegram: {
-//             label: "unittype",
-//             url: "https://t.me/unittype"
-//         },
-//     },
-//     skills: {
-//         languages: ["Rust", "Nim"],
-//     },
-// }
-
 const PersonaFullContainer = ({ data } ) => {
     const prsn = data.avatarsYaml
     console.log(data.avatarsYaml.avatar.childImageSharp.fluid)
