@@ -10,17 +10,17 @@ export interface PersonaFullContainerQueryData {
     avatarsYaml: PersonaFullProps
 }
 
-const status: StatusProps = {
-    contacts: {
-        telegram: {
-            label: "unittype",
-            url: "https://t.me/unittype"
-        },
-    },
-    skills: {
-        languages: ["Rust", "Nim"],
-    },
-}
+// const status: StatusProps = {
+//     contacts: {
+//         telegram: {
+//             label: "unittype",
+//             url: "https://t.me/unittype"
+//         },
+//     },
+//     skills: {
+//         languages: ["Rust", "Nim"],
+//     },
+// }
 
 const PersonaFullContainer = ({ data } ) => {
     const prsn = data.avatarsYaml
@@ -34,7 +34,8 @@ const PersonaFullContainer = ({ data } ) => {
                 bio={ prsn.status }
                 email={ prsn.email }
                 avatar={ prsn.avatar }
-                status={ status }
+                contacts={ prsn.contacts }
+                // status={ status }
             />
         </Layout>
     )
@@ -61,6 +62,13 @@ export const pageQuery = graphql`
                     #     ...GatsbyImageSharpFixed
                     # }
                 }
+            },
+            contacts {
+                kind
+                label
+                id
+                url
+                quickly
             }
         }
     }
