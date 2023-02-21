@@ -9,7 +9,10 @@ export interface PersonaFullProps {
     username: string,
     alias: string,
     bio: string,
-    email: string,
+    location?: string,
+    org?: string,
+    company?: string,
+    education?: string,
     avatar: {
         childImageSharp: {
             fluid: IGatsbyImageData,
