@@ -25,10 +25,6 @@ export interface PersonaFullProps {
 
 const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
     const p = props
-    console.log(p)
-    console.log(p.avatar)
-    console.log('!!!!!!!!!!!!!!!!!Contacts!!!!!!!!!!!!!!!!!!!')
-    console.log(p.contacts)
     const avt = getImage(p.avatar.childImageSharp)
     const [counter, setCounter] = useState(0);
 
