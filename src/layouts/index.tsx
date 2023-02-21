@@ -6,7 +6,7 @@ export const Layout: React.FC<any> = ({ children }) => {
     return (
         <>
             <Nav title='Persona' />
-            <main className="bg-cy-blue-dark h-full w-full mx-none px-8">
+            <main className="bg-gradation-to-r to-wild-kingdom-bg-green-dark from-wild-kingdom-bg-green-light h-full w-full mx-none px-8">
                 { children }
                 <Footer year='2023' title='Exploit.RS' url=""/>
             </main>
