@@ -41,11 +41,14 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <div className='w-full max-w-sm bg-wild-kingdom-front-green rounded-lg shadow m-auto opacity-80 demo-1'>
-                <div className='flex flex-col items-center pb-10 content'>
-                        <div className='shadow-lg mb-3 p-1 rounded-full bg-gradient-to-r from-wild-kingdom-gradation-green to-wild-kingdom-gradation-purple'>
-                            <div className='w-28 h-28 rounded-full shadow-lg glitch'>
-                                <GatsbyImage image={avt} className='' />
+            <div className='w-full max-w-xl bg-wild-kingdom-front-green rounded-lg shadow m-auto opacity-80 demo-1'>
+                <div className='flex flex-col items-center p-10 content'>
+                        <div className='purple-shadow rounded-full mb-3'>
+                        {/* <div className='shadow-lg shadow-purple-400 mb-3 rounded-full'> */}
+                            <div className='p-1 rounded-full bg-gradient-to-r from-wild-kingdom-gradation-green to-wild-kingdom-gradation-purple'>
+                                <div className='w-28 h-28 rounded-full glitch'>
+                                    <GatsbyImage image={avt} className='' />
+                                </div>
                             </div>
                         </div>
                         <div className=' justify-center'>
@@ -55,7 +58,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                                 </div>
                             </div>
                         </div>
-                    <h3 className='text-cy-blue-light text-lg text-gray-500 pb-4'>{ `@${ p.username }` }</h3>
+                    <h3 className='text-lg text-wild-kingdom-text-green pb-4'>{ `@${ p.username }` }</h3>
                     <div>
                         <h3 className='text-cy-blue-light text-lg content__text'>{ p.bio }</h3>
                     </div>
