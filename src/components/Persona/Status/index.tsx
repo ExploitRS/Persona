@@ -47,7 +47,7 @@ const Status: React.FC<StatusProps> = ({ contacts, skills }) => {
                 <div id="defaultTabContent" className="border-t-2 gradient-border px-2">
                     {  active === 'Contacts' && (
                         <Contacts { ...cons } />
-                    )},
+                    )}
                     {  active === 'Skills' && (
                         <Skills { ...skills } />
                     )}
