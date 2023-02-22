@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icons } from '../../utils/font';
 import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import Status from './Status';
@@ -55,9 +57,29 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                                 </div>
                             </div>
                         </div>
-                    <h3 className='text-lg text-wild-kingdom-text-green pb-4'>{ `@${ p.username }` }</h3>
+                    <h3 className='text-lg text-wild-kingdom-text-green mb-2'>{ `@${ p.username }` }</h3>
                     <div>
                         <h3 className='text-cy-blue-light text-lg content__text'>{ p.bio }</h3>
+                    </div>
+                    <div className='text-wild-kingdom-text-green mt-5'>
+                        { p.location && (
+                            <div className='flex'>
+                                <FontAwesomeIcon icon={icons['location']} className='mr-2' />
+                                <h4 className='text-wild-kingdom-text-green'>{ p.location }</h4>
+                            </div>
+                        )}
+                        { p.org && (
+                            <h4 className='text-wild-kingdom-text-green'>{ p.org }</h4>
+                        )}
+                        { p.company && (
+                            <h4 className='text-wild-kingdom-text-green'>{ p.company }</h4>
+                        )}
+                        { p.education && (
+                            <div className='flex'>
+                                <FontAwesomeIcon icon={icons['education']} className='mr-2' />
+                                <h4 className='text-wild-kingdom-text-green'>{ p.education }</h4>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
