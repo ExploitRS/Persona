@@ -7,10 +7,9 @@ export interface FooterProps {
     url: string,
 }
 
-const org = 'exploit-rs'
-
 export const Footer: React.FC<FooterProps> = ({ year, title, url }) => {
     const creditMark = '© '
+    const org = 'exploit-rs'
 
     return (
         <footer className='p-4 sm:p-6 bg-transparent'>
