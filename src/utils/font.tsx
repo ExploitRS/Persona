@@ -8,6 +8,10 @@ import {
     faEnvelope,
     faLightbulb,
     faSpider,
+    faMapLocationDot,
+    faLocationDot,
+    faLocationPin,
+    faChurch,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const icons = {
@@ -18,5 +22,8 @@ export const icons = {
     github: faGithub,
     notabug: faSpider,
     btc: faBtc,
-    
+    location: faLocationDot,
+    pin: faLocationPin,
+    map: faMapLocationDot,
+    education: faChurch,
 }
