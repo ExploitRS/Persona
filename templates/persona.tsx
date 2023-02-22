@@ -53,6 +53,12 @@ export const pageQuery = graphql`
                 url
                 quickly
             }
+            skills {
+                kind
+                label
+                languageKind
+                approach
+            }
         }
     }
 `;
