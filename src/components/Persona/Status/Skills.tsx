@@ -13,7 +13,7 @@ const Skills: React.FC<SkillProps> = (props: SkillProps) => {
                 <>
                     { sk.languages.map((lang) => (
                         <div>{ lang }</div>
-                    ))},
+                    ))}
                 </>
             )}
         </div>
