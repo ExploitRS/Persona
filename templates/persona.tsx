@@ -27,7 +27,7 @@ export const pageQuery = graphql`
         avatarsYaml(username: { eq: $username }) {
             username
             alias
-            status
+            bio 
             location
             org
             company
