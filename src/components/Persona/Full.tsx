@@ -4,7 +4,7 @@ import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import Status from './Status';
 import { Contact } from './Status/Contacts';
-import { SkillProps } from './Status/Skills';
+import { SkillProps } from './Status/Skill';
 
 export interface PersonaFullProps {
     username: string,
@@ -20,7 +20,7 @@ export interface PersonaFullProps {
         }
     },
     contacts?: Contact[],
-    skills?: SkillProps,
+    skills?: SkillProps[],
 }
 
 const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
