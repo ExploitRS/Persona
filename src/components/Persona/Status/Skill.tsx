@@ -40,16 +40,14 @@ const Skill: React.FC<SkillProps> = (props: SkillProps) => {
     )
 
     return (
-        <>
-            <h3 className="text-cy-blue-light border-b gradient-border">{ sk.label }</h3>
+        <div className="mb-3">
+            <div className="flex w-full">
+                <h3 className="text-cy-blue-light border-b gradient-border font-bold text-lg mb-2 tracking-tight w-full">{ sk.label }</h3>
+            </div>
             { sk.description && (
-                <p className="text-cy-blue-light">{ sk.description }</p>
+                <p className="text-cy-blue-light leading-5">{ sk.description }</p>
             )}
-            {/* { badge } */}
-            {/* <div className="text-wild-kingdom-text-green">
-                { icon }
-            </div> */}
-        </>
+        </div>
     )
 }
 
