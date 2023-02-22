@@ -56,7 +56,7 @@ export const pageQuery = graphql`
             skills {
                 kind
                 label
-                descritpion
+                description
                 languageKind
                 approach
             }
