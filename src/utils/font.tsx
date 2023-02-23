@@ -26,6 +26,10 @@ export const devicon = {
         </svg>
 }
 
+export const fixedStyle = {
+    width: '30px',
+}
+
 export const icons = {
     telegram: faTelegram,
     email: faEnvelope,
