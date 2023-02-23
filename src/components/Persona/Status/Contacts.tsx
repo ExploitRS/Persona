@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faTelegram } from '@fortawesome/free-solid-svg-icons';
-import { icons } from '../../../utils/font';
+import { icons, fixedStyle } from '../../../utils/font';
 export interface ContactsProps {
     contacts: Contact[];
 }
@@ -34,11 +34,6 @@ export interface Warp {
     label: string,
     url: string,
 }
-
-const fixedStyle = {
-    width: '30px',
-}
-
 const Contacts: React.FC<ContactsProps> = (props) => {
     const { contacts: cons } = props;
 
