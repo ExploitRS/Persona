@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faTelegram } from '@fortawesome/free-solid-svg-icons';
 import { icons } from '../../../utils/font';
-
 export interface ContactsProps {
     contacts: Contact[];
 }
@@ -36,6 +35,10 @@ export interface Warp {
     url: string,
 }
 
+const fixedStyle = {
+    width: '30px',
+}
+
 const Contacts: React.FC<ContactsProps> = (props) => {
     const { contacts: cons } = props;
 
@@ -45,7 +48,7 @@ const Contacts: React.FC<ContactsProps> = (props) => {
                 { cons.map((con) => (
                     <a href={con.url} target="_blank">
                         <div className="text-wild-kingdom-text-green-light flex flex-col items-center justify-center">
-                            <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} fixedWidth />
+                            <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} fixedWidth style={ fixedStyle } />
                             <dd className="text-cy-blue-light text-sm leading-5 mt-1">{`${ con.id }`}</dd>
                         </div>
                     </a>
