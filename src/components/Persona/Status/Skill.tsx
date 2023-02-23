@@ -35,9 +35,6 @@ const Skill: React.FC<SkillProps> = (props: SkillProps) => {
     const badge = (
         Badge[sk.kind]
     )
-    const icon = (
-        devicon['rust']
-    )
 
     return (
         <div className="mb-3">
