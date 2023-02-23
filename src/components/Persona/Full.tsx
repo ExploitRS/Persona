@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icons } from '../../utils/font';
+import { icons, fixedStyle } from '../../utils/font';
 import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import Status from './Status';
@@ -64,7 +64,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                     <div className='text-wild-kingdom-text-green mt-5'>
                         { p.location && (
                             <div className='flex'>
-                                <FontAwesomeIcon icon={icons['location']} className='mr-2' />
+                                <FontAwesomeIcon icon={icons['location']} className='mr-2' style={ fixedStyle } />
                                 <h4 className='text-wild-kingdom-text-green'>{ p.location }</h4>
                             </div>
                         )}
@@ -76,7 +76,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         )}
                         { p.education && (
                             <div className='flex'>
-                                <FontAwesomeIcon icon={icons['education']} className='mr-2' />
+                                <FontAwesomeIcon icon={icons['education']} className='mr-2' style={ fixedStyle } />
                                 <h4 className='text-wild-kingdom-text-green'>{ p.education }</h4>
                             </div>
                         )}
