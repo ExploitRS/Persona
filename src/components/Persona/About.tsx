@@ -14,7 +14,7 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
 
     return (
         <Link to={`/${prsn.username}`} >
-            <div className='bg-cy-blue-mid max-w-sd mb-4 p-4 border border-cy-blue-light rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
+            <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
                 <div className='flex'>
                     <div className='flex-shrink-0'>
                         <GatsbyImage image={img} alt={prsn.username} class='rounded-full' />
