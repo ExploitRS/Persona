@@ -15,13 +15,16 @@ export const Footer: React.FC<FooterProps> = ({ year, title, url }) => {
         <footer className='p-4 sm:p-6 bg-transparent'>
             <hr className='my-6 gradient-border sm:mx-auto lg:my-8'/>
             <div className='sm:flex sm:items-center sm:justify-between'>
-                <span className='text-sm text-wild-kingdom-text-green sm:text-center'>
-                    { `${creditMark}${year} ` }
-                    <Link to={url} className='hover:underline'>
-                        { title }
-                    </Link>
-                    . All Rights Reserved.
-                </span>
+                <div className='flex flex-col'>
+                    <span className='text-sm text-wild-kingdom-text-green sm:text-center'>
+                        { `${creditMark}${year} ` }
+                        <Link to={url} className='hover:underline'>
+                            { title }
+                        </Link>
+                        . All Rights Reserved.
+                    </span>
+                    <span className='text-sm text-wild-kingdom-text-green'>{'Theme by Wild Kingdom Forum.'}</span>
+                </div>
                 <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>
                     <Link to={`https://github.com/${ org }`} target='_blank' className='text-wild-kingdom-text-green hover:text-gray-900'>
                         <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
