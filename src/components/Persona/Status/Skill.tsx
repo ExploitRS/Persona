@@ -1,5 +1,4 @@
 import React from "react"
-import { devicon } from '../../../utils/font';
 
 export type SkillProps = Sk & (Programming | Security);
 
