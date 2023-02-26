@@ -13,14 +13,17 @@ interface TabProps {
 }
 
 const Status: React.FC<StatusProps> = ({ contacts, skills }) => {
-    const tabs = [
-        {
-            title: "Contacts",
-        },
-        {
-            title: "Skills",
-        }
-    ]
+    const initTabs = (st: StatusProps) => {
+        let tabs: TabProps[] = [];
+        { st.contacts && (
+            tabs.push({ title: 'Contacts' })
+        )}
+        { st.skills && (
+            tabs.push({ title: 'Skills' })
+        )}
+        return tabs
+    }
+    const tabs = initTabs({ contacts, skills })
     const [active, setActive] = useState<string>(tabs[0].title);
 
     const cons = {
