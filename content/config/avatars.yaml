@@ -64,14 +64,21 @@
       description: 'noob.'
 
 - username: 'power'
-  alias: 'Power'
-  email: 'power@exploit.rs'
-  status: 'medical'
+  alias: 'Nagax'
+  bio: 'medical'
   is_public: true
-  avatar: '../avatars/nil.png'
+  avatar: '../avatars/power.jpeg'
+  location: 'Darkness'
+  education: 'Nursing School'
+  contacts:
+    - kind: 'telegram'
+      label: 'Telegam'
+      id: 'xxnagaxx'
+      url: 'https://t.me/xxnagaxx'
+      quickly: true
+
 - username: 'exploit.rs'
   alias: 'Exploit.RS'
-  email: 'me@exploit.rs'
   status: 'Bot'
   is_public: true
   avatar: '../avatars/nil.png'
