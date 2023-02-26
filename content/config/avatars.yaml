@@ -65,11 +65,13 @@
 
 - username: 'power'
   alias: 'Nagax'
-  bio: 'medical'
+  bio: 'Nagaxニャン'
   is_public: true
   avatar: '../avatars/power.jpeg'
   location: 'Darkness'
   education: 'Nursing School'
+  org: ''
+  company: ''
   contacts:
     - kind: 'telegram'
       label: 'Telegam'
