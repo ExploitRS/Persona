@@ -13,16 +13,30 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
     const img = getImage(prsn.avatar)
 
     return (
-        <Link to={`/${prsn.username}`} >
-            <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
-                <div className='flex'>
-                    <div className='flex-shrink-0'>
-                        <GatsbyImage image={img} alt={prsn.username} class='rounded-full' />
+        <>
+            { prsn.is_public ? (
+                <Link to={`/${prsn.username}`} >
+                    <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
+                        <div className='flex'>
+                            <div className='flex-shrink-0'>
+                                <GatsbyImage image={img} alt={prsn.username} class='rounded-full' />
+                            </div>
+                            <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold'>{prsn.username}</h4>
+                        </div>
                     </div>
-                    <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold'>{prsn.username}</h4>
+                </Link>
+            ) : (
+                <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow gap-4 items-center content-cneter blur-md'>
+                    <div className='flex'>
+                        <div className='flex-shrink-0 blur-md'>
+                            <div className='rounded-full bg-slate-50 w-[50px] h-[50px]'></div>
+                        </div>
+                        <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold blur-none'>{ 'Private Persona' }</h4>
+                    </div>
                 </div>
-            </div>
-        </Link>
+            )}
+        </>
+
     )
 }
 
