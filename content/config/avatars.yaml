@@ -82,5 +82,15 @@
 - username: 'exploit.rs'
   alias: 'Exploit.RS'
   status: 'Bot'
-  is_public: true
+  is_public: false
+  avatar: '../avatars/nil.png'
+- username: 'exploit.rs'
+  alias: 'Exploit.RS'
+  status: 'Bot'
+  is_public: false
+  avatar: '../avatars/nil.png'
+- username: 'exploit.rs'
+  alias: 'Exploit.RS'
+  status: 'Bot'
+  is_public: false
   avatar: '../avatars/nil.png'
