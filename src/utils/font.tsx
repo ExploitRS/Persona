@@ -31,7 +31,7 @@ export const contactIconSize = {
 }
 
 export const bioIconSize = {
-    width: '12px',
+    width: '20px',
 }
 
 export const icons = {
