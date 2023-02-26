@@ -26,8 +26,8 @@ export const devicon = {
         </svg>
 }
 
-export const fixedStyle = {
-    width: '30px',
+export const fixedStyle = (num: number) => {
+    width: { `${ num }px` }
 }
 
 export const icons = {
