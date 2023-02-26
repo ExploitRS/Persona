@@ -20,6 +20,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-transition-group": "^4.4.5",
     "gatsby": "^5.5.0",
     "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
@@ -28,7 +29,8 @@
     "gatsby-transformer-yaml": "^5.5.0",
     "react": "^18.2.0",
     "react-devicon": "^0.1.9",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
