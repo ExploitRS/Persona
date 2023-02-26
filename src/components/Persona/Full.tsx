@@ -49,7 +49,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         { p.location && (
                             <div className='flex'>
                                 <FontAwesomeIcon icon={icons['location']} className='mr-2' style={ fixedStyle(10) } />
-                                <h4 className='text-wild-kingdom-text-green'>{ p.location }</h4>
+                                <h4 className='text-wild-kingdom-text-green leading-5'>{ p.location }</h4>
                             </div>
                         )}
                         { p.org && (
@@ -61,7 +61,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         { p.education && (
                             <div className='flex'>
                                 <FontAwesomeIcon icon={icons['education']} className='mr-2' style={ fixedStyle } />
-                                <h4 className='text-wild-kingdom-text-green'>{ p.education }</h4>
+                                <h4 className='text-wild-kingdom-text-green leading-5'>{ p.education }</h4>
                             </div>
                         )}
                     </div>
