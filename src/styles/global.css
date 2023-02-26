@@ -29,6 +29,7 @@ html, body, #___gatsby {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -43,6 +44,10 @@ body {
     width: 100%;
     margin: 0;
     background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
+}
+
+main {
+    /* font-family: ; */
 }
 
 div[role="group"][tabindex] {
