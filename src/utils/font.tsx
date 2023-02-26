@@ -26,8 +26,12 @@ export const devicon = {
         </svg>
 }
 
-export const fixedStyle = (num: number) => {
-    width: { `${ num }px` }
+export const contactIconSize = {
+    width: '30px',
+}
+
+export const bioIconSize = {
+    width: '12px',
 }
 
 export const icons = {

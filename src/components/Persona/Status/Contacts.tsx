@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faTelegram } from '@fortawesome/free-solid-svg-icons';
-import { icons, fixedStyle } from '../../../utils/font';
+import { icons, contactIconSize } from '../../../utils/font';
 export interface ContactsProps {
     contacts: Contact[];
 }
@@ -43,7 +43,7 @@ const Contacts: React.FC<ContactsProps> = (props) => {
                 { cons.map((con) => (
                     <a href={con.url} target="_blank">
                         <div className="text-wild-kingdom-text-green-light flex flex-col items-center justify-center">
-                            <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} style={ fixedStyle(30) } />
+                            <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} style={ contactIconSize } />
                             <dd className="text-cy-blue-light text-sm leading-5 mt-1">{`${ con.id }`}</dd>
                         </div>
                     </a>

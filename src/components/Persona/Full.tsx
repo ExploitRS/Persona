@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icons, fixedStyle } from '../../utils/font';
+import { icons, bioIconSize } from '../../utils/font';
 import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import Status from './Status';
@@ -26,7 +26,6 @@ export interface PersonaFullProps {
 const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
     const p = props
     const avt = getImage(p.avatar.childImageSharp)
-    const width = fixedStyle(10);
 
     return (
         <>
@@ -61,7 +60,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         )}
                         { p.education && (
                             <div className='flex'>
-                                <FontAwesomeIcon icon={icons['education']} className='mr-2' style={ fixedStyle } />
+                                <FontAwesomeIcon icon={icons['education']} className='mr-2' style={ bioIconSize } />
                                 <h4 className='text-wild-kingdom-text-green leading-5'>{ p.education }</h4>
                             </div>
                         )}
