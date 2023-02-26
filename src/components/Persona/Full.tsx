@@ -48,7 +48,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                     <div className='text-wild-kingdom-text-green mt-5'>
                         { p.location && (
                             <div className='flex'>
-                                <FontAwesomeIcon icon={icons['location']} className='mr-2' style={ fixedStyle } />
+                                <FontAwesomeIcon icon={icons['location']} className='mr-2' style={ fixedStyle(10) } />
                                 <h4 className='text-wild-kingdom-text-green'>{ p.location }</h4>
                             </div>
                         )}
