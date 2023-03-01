@@ -1,5 +1,5 @@
 - username: 'nil'
-  alias: 'Luca Todesco'
+  alias: 'Jukan Kyokou'
   bio: 'Looking for a part-time engineering job.'
   avatar: '../avatars/nil.png'
   location: 'Tokyo ⇄ Cyberia'
@@ -25,8 +25,8 @@
       quickly: true
     - kind: 'github'
       label: 'GitHub'
-      id: 'nonnil'
-      url: 'https://github.com/nonnil'
+      id: 'JukanKyokou'
+      url: 'https://github.com/JukanKyokou'
       quickly: true
     - kind: 'notabug'
       label: 'NotABug'
