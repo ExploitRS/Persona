@@ -25,8 +25,8 @@
       quickly: true
     - kind: 'github'
       label: 'GitHub'
-      id: 'JukanKyokou'
-      url: 'https://github.com/JukanKyokou'
+      id: 'jukank'
+      url: 'https://github.com/jukank'
       quickly: true
     - kind: 'notabug'
       label: 'NotABug'
