@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ year, title, url }) => {
                         </Link>
                         . All Rights Reserved.
                     </span>
-                    <span className='text-sm text-wild-kingdom-text-green'>{'Theme by Wild Kingdom Forum.'}</span>
+                    <span className='text-sm text-wild-kingdom-text-green'>{ 'Theme by Conti Ransomware.' }</span>
                 </div>
                 <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>
                     <Link to={`https://github.com/${ org }`} target='_blank' className='text-wild-kingdom-text-green hover:text-gray-900'>
