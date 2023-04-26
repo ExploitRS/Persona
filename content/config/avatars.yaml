@@ -10,8 +10,8 @@
   contacts:
     - kind: 'email'
       label: 'E-mail'
-      id: 'nillability@protonmail.com'
-      url: 'mailto:nillability@protonmail.com'
+      id: 'nullopt_t@proton.me'
+      url: 'mailto:nullopt_t@proton.me'
       quickly: true
     - kind: 'telegram'
       label: 'Telegram'
