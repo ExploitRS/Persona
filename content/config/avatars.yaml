@@ -78,17 +78,31 @@
       id: 'xxnagaxx'
       url: 'https://t.me/xxnagaxx'
       quickly: true
+  
+- username: mohammad
+  alias: 'Mohammad'
+  bio: 'Certified Ethical Hacker'
+  is_public: true
+  avatar: '../avatars/mohammad.jpg'
+  contacts:
+    - kind: 'telegram'
+      label: 'Telegram'
+      id: ''
+      url: ''
+      quickly: true
 
 - username: 'exploit.rs'
   alias: 'Exploit.RS'
   status: 'Bot'
   is_public: false
   avatar: '../avatars/nil.png'
+
 - username: 'exploit.rs'
   alias: 'Exploit.RS'
   status: 'Bot'
   is_public: false
   avatar: '../avatars/nil.png'
+
 - username: 'exploit.rs'
   alias: 'Exploit.RS'
   status: 'Bot'
