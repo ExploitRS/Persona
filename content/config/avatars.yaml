@@ -83,7 +83,7 @@
   alias: 'Mohammad'
   bio: 'Certified Ethical Hacker'
   is_public: true
-  avatar: '../avatars/mohammad.jpg'
+  avatar: '../avatars/default.jpg'
   contacts:
     - kind: 'telegram'
       label: 'Telegram'
