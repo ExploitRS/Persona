@@ -61,7 +61,7 @@
     - kind: 'security'
       approach: 're'
       label: 'Reverse Engineering'
-      description: 'noob.'
+      description: 'I am interested in malware analysis.'
 
 - username: 'power'
   alias: 'Nagax'
