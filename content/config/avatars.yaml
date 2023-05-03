@@ -13,6 +13,11 @@
       id: 'nullopt_t@proton.me'
       url: 'mailto:nullopt_t@proton.me'
       quickly: true
+    - kind: 'email'
+      label: 'E-mail'
+      id: 'mhyprot2@skiff.com'
+      url: 'mailto:mhyprot2@skiff.com'
+      quickly: false
     - kind: 'telegram'
       label: 'Telegram'
       id: 'unittype'
