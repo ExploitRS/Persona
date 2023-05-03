@@ -27,7 +27,6 @@ export const createPages = async ({ actions, graphql }) => {
             }
         }
     `)
-    console.log(data.allAvatarsYaml.nodes);
 
     data.allAvatarsYaml.nodes.forEach(node => {
         const {
