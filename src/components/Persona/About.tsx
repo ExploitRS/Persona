@@ -21,7 +21,7 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
                             <div className='flex-shrink-0'>
                                 <GatsbyImage image={img} alt={prsn.username} class='rounded-full' />
                             </div>
-                            <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold'>{prsn.username}</h4>
+                            <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold'>{ `@${prsn.username}` }</h4>
                         </div>
                     </div>
                 </Link>
@@ -32,7 +32,9 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
                             {/* <div className='rounded-full w-[50px] h-[50px]'></div> */}
                             <StaticImage src="../../../content/avatars/default.jpg" alt={prsn.username} class='rounded-full w-[50px] h-[50px]' />
                         </div>
-                        <h4 className='text-wild-kingdom-icon-red flex-1 min-w-0 mx-4 flex items-center font-bold blur-none'>{ 'Private Persona' }</h4>
+                            <h4 className='text-wild-kingdom-icon-red flex-1 min-w-0 mx-4 flex items-center font-bold blur-none'>
+                                <i>{ "*Private Persona" }</i>
+                            </h4>
                     </div>
                 </div>
             )}
