@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, IGatsbyImageData, StaticImage } from 'gatsby-plugin-image'
 
 export interface PersonaAboutProps {
     username: string
@@ -26,12 +26,13 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
                     </div>
                 </Link>
             ) : (
-                <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow gap-4 items-center content-cneter blur-md'>
+                <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow gap-4 items-center content-cneter'>
                     <div className='flex'>
-                        <div className='flex-shrink-0 blur-md'>
-                            <div className='rounded-full bg-slate-50 w-[50px] h-[50px]'></div>
+                        <div className='flex-shrink-0'>
+                            {/* <div className='rounded-full w-[50px] h-[50px]'></div> */}
+                            <StaticImage src="../../../content/avatars/default.jpg" alt={prsn.username} class='rounded-full w-[50px] h-[50px]' />
                         </div>
-                        <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold blur-none'>{ 'Private Persona' }</h4>
+                        <h4 className='text-wild-kingdom-icon-red flex-1 min-w-0 mx-4 flex items-center font-bold blur-none'>{ 'Private Persona' }</h4>
                     </div>
                 </div>
             )}
