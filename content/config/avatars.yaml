@@ -1,5 +1,5 @@
 - username: 'nil'
-  alias: 'Billie Jean?'
+  alias: 'Xiao'
   bio: 'Looking for a part-time engineering job.'
   avatar: '../avatars/nil.png'
   location: 'Tokyo ⇄ The Wired'
@@ -13,11 +13,6 @@
       id: 'nullopt_t@proton.me'
       url: 'mailto:nullopt_t@proton.me'
       quickly: true
-    - kind: 'email'
-      label: 'E-mail'
-      id: 'mhyprot2@skiff.com'
-      url: 'mailto:mhyprot2@skiff.com'
-      quickly: false
     - kind: 'telegram'
       label: 'Telegram'
       id: 'unittype'
