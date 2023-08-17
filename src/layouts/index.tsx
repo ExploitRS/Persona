@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 export const Layout: React.FC<any> = ({ children }) => {
     return (
         <div className='m-0 p-0 wallpaper'>
-            <div className='m-0 p-0 backdrop-blur-lg backdrop-blur-xl backdrop-saturate-150 bg-background/70'>
+            <div className='m-0 p-0  backdrop-blur-ios bg-black/[.2]'>
                 <Nav title='Persona' />
                 <main className="flex-col justify-center w-full mx-auto p-8 max-w-4xl md-my-8">
                     <div className='min-h-screen '>
