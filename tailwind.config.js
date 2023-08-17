@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'glass': {
+          'card': {
+            border: 'var(--glass-card-border)',
+          }
+        },
         'cy': {
           'red': {
             light: 'var(--cy-red-light)',
