@@ -35,10 +35,10 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         <div className='w-32 h-32 rounded-full glitch'>
                             <GatsbyImage image={avt} className='rounded-full' />
                         </div>
-                        <div className='my-auto'>
+                        <div className=''>
                             <div className='flex flex-row space-x-4'>
-                                <h1 className='text-white mb-1 text-3xl content__title'>{ p.alias }</h1>
-                                <h3 className='text-lg text-gray-400 mb-2'>{ `@${ p.username }` }</h3>
+                                <h1 className='text-white mb-1 text-3xl font-semibold content__title'>{ p.alias }</h1>
+                                <h3 className='text-lg text-gray-200'>{ `@${ p.username }` }</h3>
                             </div>
                             <div>
                                 <h2 className='text-white text-lg content__text'>{ p.bio }</h2>
