@@ -12,6 +12,7 @@ import {
     faLocationDot,
     faLocationPin,
     faChurch,
+    faCertificate
 } from '@fortawesome/free-solid-svg-icons';
 
 import React from 'react';
@@ -46,4 +47,5 @@ export const icons = {
     pin: faLocationPin,
     map: faMapLocationDot,
     education: faChurch,
+    verified: faCertificate,
 }
