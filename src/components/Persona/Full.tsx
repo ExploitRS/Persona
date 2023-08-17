@@ -10,6 +10,7 @@ export interface PersonaFullProps {
     username: string,
     alias: string,
     bio: string,
+    exploitrs?: string,
     location?: string,
     org?: string,
     company?: string,
@@ -29,7 +30,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <div className='w-full max-w-xl rounded-lg shadow m-auto opacity-80 demo-1'>
+            <div className='w-full max-w-xl rounded-lg m-auto demo-1'>
                 <div className='flex flex-col py-10 content'>
                     <div className='flex flex-row space-x-8 mx-3'>
                         <div className='w-32 h-32 rounded-full glitch'>
@@ -45,7 +46,18 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-white mt-5 w-full px-4 rounded-lg flex flex-col bg-blend-hue backdrop-blur-sm bg-black/75 border border-solid border-glass-card-border '>
+                    <div className='text-white mt-5 w-full px-4 rounded-lg flex flex-col bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
+                        { p.exploitrs && (
+                            <div className='flex flex-row py-4 space-x-2 border-b border-glass-card-border'>
+                                <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
+                                    <FontAwesomeIcon icon={icons['verified']} className=''/>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <h4 className='text-gray-400 leading-5'>Exploit.RS</h4>
+                                    <h4 className='text-white leading-5'>{ p.exploitrs }</h4>
+                                </div>
+                            </div>
+                        )}
                         { p.location && (
                             <div className='flex flex-row py-4 space-x-2 border-b border-glass-card-border'>
                                 <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
