@@ -28,6 +28,7 @@ export const pageQuery = graphql`
             username
             alias
             bio 
+            exploitrs
             location
             org
             company
