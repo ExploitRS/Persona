@@ -4,14 +4,17 @@ import { Footer } from '../components/Footer';
 
 export const Layout: React.FC<any> = ({ children }) => {
     return (
-        <>
-            <Nav title='Persona' />
-            <main className="bg-gradation-to-r to-wild-kingdom-bg-green-dark from-wild-kingdom-bg-green-light flex flex-col justify-center w-full mx-auto p-8 max-w-4xl md-my-8">
-                <div className='min-h-screen'>
-                    { children }
-                </div>
-                <Footer year='2023' title='Exploit.RS' url=""/>
-            </main>
-        </>
+        <div className='m-0 p-0 wallpaper'>
+            <div className='m-0 p-0 backdrop-blur-lg backdrop-blur-xl backdrop-saturate-150 bg-background/70'>
+                <Nav title='Persona' />
+                <main className="flex-col justify-center w-full mx-auto p-8 max-w-4xl md-my-8">
+                    <div className='min-h-screen '>
+                    {/* <div className='min-h-screen bg-test'> */}
+                        { children }
+                    </div>
+                    <Footer year='2023' title='Exploit.RS' url=""/>
+                </main>
+            </div>
+        </div>
     )
 }
