@@ -57,6 +57,9 @@ module.exports = {
         // MidNightBlue: '0a0c2e',
       },
     },
+    backdropBlur: {
+      ios: '75px'
+    }
   },
   plugins: [],
 }
