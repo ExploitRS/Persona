@@ -6,7 +6,7 @@
   exploitrs: 'nil'
   org: ''
   company: ''
-  education: 'Keio Uni'
+  education: 'Keio University'
   is_public: true
   contacts:
     - kind: 'email'
@@ -56,7 +56,7 @@
       label: 'TypeScript'
       description: 'Used for Front-end'
     - kind: 'security'
-      approach: 'penetest'
+      approach: 'pentest'
       label: 'Penetration test'
       description: 'I have reported several vulnerabilities to companies...'
     - kind: 'security'
