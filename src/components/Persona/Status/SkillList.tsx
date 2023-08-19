@@ -10,7 +10,7 @@ const Skills: React.FC<SkillsProps> = (props: SkillsProps) => {
     return (
         <div className="my-9">
             <h1 className="text-white font-bold text-2xl md:text-4xl tracking-tight">Skills</h1>
-            <div className="" id="skills">
+            <div className="flex flex-col flex-nowrap flex-shrink-0 flex-grow-0 basis-full" id="skills">
                 { sk_list.map((sk) => (
                     <Skill { ...sk } />
                 ))}
