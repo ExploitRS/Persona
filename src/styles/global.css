@@ -6,6 +6,15 @@
 @layer base {
     :root {
         --glass-card-border: rgba(255, 255, 255, 0.125);
+
+        --language-rust: 222 165 132;
+        --language-nim: 255 194 0;
+        --language-elm: 96 181 204;
+        --language-go: 0 173 216;
+        --language-typescript: 49 120 198;
+        --brand-hackerone: 249 34 163;
+        --brand-malware: 238 106 106;
+
         --cy-red-light: #ff2a6d;
         --cy-blue-light: #d1f7ff;
         --cy-blue-mid: #005678;
