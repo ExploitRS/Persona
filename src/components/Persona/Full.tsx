@@ -30,7 +30,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <div className='w-full max-w-xl rounded-lg m-auto demo-1'>
+            <div className='w-full max-w-xl min-w-0 rounded-lg m-auto demo-1'>
                 <div className='flex flex-col py-10 content'>
                     <div className='flex flex-row space-x-8 mx-3'>
                         <div className='w-32 h-32 rounded-full glitch'>
@@ -38,7 +38,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         </div>
                         <div className=''>
                             <div className='flex flex-row space-x-4'>
-                                <h1 className='text-white mb-1 text-3xl font-semibold content__title'>{ p.alias }</h1>
+                                <h1 className='text-white mb-1 text-xl md:text-3xl lg:text-3xl font-semibold content__title'>{ p.alias }</h1>
                                 <h3 className='text-lg text-gray-200'>{ `@${ p.username }` }</h3>
                             </div>
                             <div>
@@ -46,9 +46,9 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-white mt-5 w-full px-4 rounded-lg flex flex-col bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
+                    <div className='flex flex-col flex-wrap text-white mt-5 w-full px-4 rounded-lg bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
                         { p.exploitrs && (
-                            <div className='flex flex-row py-4 space-x-2 border-b border-glass-card-border'>
+                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full w-full py-4 space-x-2 border-b border-glass-card-border'>
                                 <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
                                     { icons['verified'] }
                                 </div>
@@ -59,7 +59,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             </div>
                         )}
                         { p.location && (
-                            <div className='flex flex-row py-4 space-x-2 border-b border-glass-card-border'>
+                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full py-4 space-x-2 border-b border-glass-card-border'>
                                 <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
                                     <FontAwesomeIcon icon={icons['location']} className='' style={ bioIconSize } />
                                 </div>
@@ -76,7 +76,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             <h4 className='text-wild-kingdom-text-green'>{ p.company }</h4>
                         )}
                         { p.education && (
-                            <div className='flex flex-row space-x-2 py-4'>
+                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full space-x-2 py-4'>
                                 <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
                                     <FontAwesomeIcon icon={icons['education']} className='' style={ bioIconSize } />
                                 </div>
