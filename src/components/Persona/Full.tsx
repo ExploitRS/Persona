@@ -34,7 +34,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                 <div className='flex flex-col py-10 content'>
                     <div className='flex flex-row space-x-8 mx-3'>
                         <div className='w-32 h-32 rounded-full glitch'>
-                            <GatsbyImage image={avt} className='rounded-full' />
+                            <GatsbyImage image={avt} className='rounded-full placeholder:blur' />
                         </div>
                         <div className=''>
                             <div className='flex flex-row space-x-4'>
@@ -50,7 +50,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         { p.exploitrs && (
                             <div className='flex flex-row py-4 space-x-2 border-b border-glass-card-border'>
                                 <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
-                                    <FontAwesomeIcon icon={icons['verified']} className=''/>
+                                    { icons['verified'] }
                                 </div>
                                 <div className='flex flex-col'>
                                     <h4 className='text-gray-400 leading-5'>Exploit.RS</h4>
