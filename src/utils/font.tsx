@@ -15,9 +15,7 @@ import {
     faLocationDot,
     faLocationPin,
     faGraduationCap,
-    faCertificate,
 } from '@fortawesome/free-solid-svg-icons';
-import 'boxicons'
 
 import React from 'react';
 
