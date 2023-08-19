@@ -40,20 +40,20 @@ const Contacts: React.FC<ContactsProps> = (props) => {
     return(
         <>
             <h1 className="text-white font-bold text-2xl md:text-4xl tracking-tight">Social Accounts & Contacts</h1>
-            <div className="pt-4 text-white" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                <dl className="grid max-w-screen-xl grid-cols-2 gap-8 mx-auto ">
+            <div className="pt-4 text-white">
+                <div className="flex max-w-screen-xl flex-wrap mx-auto ">
                     { cons.map((con) => (
-                        <a href={con.url} target="_blank">
-                            <div className="text-white flex flex-row space-x-2 items-stretch justify-start">
+                        <a href={con.url} target="_blank" className="flex-grow-0 flex-shrink-0 basis-1/2 mb-2">
+                            <div className="text-white flex flex-row space-x-2 justify-start items-center">
                                 <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} style={ contactIconSize } />
                                 <div>
-                                    <h3 className="text-white text-lg font-bold">{ con.label }</h3>
-                                    <h4 className="text-gray-400 text-md leading-5 mt-1">{`${ con.id }`}</h4>
+                                    <h3 className="text-white text-md font-bold">{ con.label }</h3>
+                                    <h4 className="text-gray-400 text-sm font-semibold font-mono">{`${ con.id }`}</h4>
                                 </div>
                             </div>
                         </a>
                     ))}
-                </dl>
+                </div>
             </div>
         </>
     )
