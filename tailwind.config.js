@@ -13,6 +13,32 @@ module.exports = {
             border: 'var(--glass-card-border)',
           }
         },
+        'language': {
+          'rust': {
+            normal: 'rgb(var(--language-rust))',
+            transparent: 'rgb(var(--language-rust) / 2)',
+          },
+          'nim': {
+            normal: 'rgb(var(--language-nim))',
+            transparent: 'rgb(var(--language-nim) / 2)',
+          },
+          'elm': {
+            normal: 'rgb(var(--language-elm))',
+            transparent: 'rgb(var(--language-elm) / .2)',
+          },
+          'go': {
+            normal: 'rgb(var(--language-go))',
+            transparent: 'rgb(var(--language-go) / 2)',
+          },
+          'typescript': {
+            normal: 'rgb(var(--language-typescript))',
+            transparent: 'rgb(var(--language-typescript) / 2)',
+          },
+        },
+        'brand': {
+          hackerone: 'rgb(var(--brand-hackerone))',
+          malware: 'rgb(var(--brand-malware))',
+        },
         'cy': {
           'red': {
             light: 'var(--cy-red-light)',
