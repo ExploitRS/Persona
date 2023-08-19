@@ -23,7 +23,7 @@ const Status: React.FC<StatusProps> = ({ contacts, skills }) => {
 
     return(
         <>
-            <div className="w-full rounded-lg shadow mt-10 opacity-80 m-auto max-w-xl">
+            <div className="w-full rounded-lg shadow mt-10 opacity-80 max-w-xl m-auto">
                 <div id="defaultTabContent" className="">
                     {  contacts && (
                         <Contacts { ...cons } />
