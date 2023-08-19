@@ -28,13 +28,13 @@ enum SkillKind {
 }
 
 const brandColors = {
-    rust: 'to-language-rust-normal/90',
-    nim: 'to-language-nim-normal/50',
-    elm: 'to-language-elm-normal/50',
-    go: 'to-language-go-normal/50',
-    typescript: 'to-language-typescript-normal/50',
-    pentest: 'to-brand-hackerone/50',
-    re: 'to-brand-malware/50',
+    rust: 'to-language-rust-normal/30',
+    nim: 'to-language-nim-normal/30',
+    elm: 'to-language-elm-normal/30',
+    go: 'to-language-go-normal/30',
+    typescript: 'to-language-typescript-normal/30',
+    pentest: 'to-brand-hackerone/30',
+    re: 'to-brand-malware/30',
 }
 
 const Badge = {
@@ -72,8 +72,8 @@ const Skill: React.FC<SkillProps> = (props: SkillProps) => {
     )
 
     return (
-        <div className={ `flex w-full mb-3 backdrop-blur-ios bg-gradient-to-br from-transparent ${languageColor} rounded-lg` }>
-            <div className="grid grid-cols-2 gap-4 w-full p-8 backdrop-blur-ios bg-black/[.2] rounded-lg text-white border border-solid border-glass-card-border">
+        <div className={ `flex flex-nowrap w-full mb-3 backdrop-blur-ios bg-gradient-to-br from-transparent ${languageColor} rounded-lg` }>
+            <div className="flex   justify-between  w-full p-8 backdrop-blur-ios bg-black/[.2] rounded-lg text-white border border-solid border-glass-card-border">
                 <div>
                     <div className="">
                         <h3 className="text-white font-bold text-2xl mb-2 tracking-tight w-full">{ sk.label }</h3>
