@@ -8,10 +8,13 @@ export interface SkillsProps {
 const Skills: React.FC<SkillsProps> = (props: SkillsProps) => {
     const sk_list = props.skills;
     return (
-        <div className="p-4 bg-white rounded-lg md:p-8 bg-wild-kingdom-front-green" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-            { sk_list.map((sk) => (
-                <Skill { ...sk } />
-            ))}
+        <div className="my-9">
+            <h1 className="text-white font-bold text-2xl md:text-4xl tracking-tight">Skills</h1>
+            <div className="" id="skills">
+                { sk_list.map((sk) => (
+                    <Skill { ...sk } />
+                ))}
+            </div>
         </div>
     )
 }
