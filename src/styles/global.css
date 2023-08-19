@@ -40,6 +40,8 @@ html, body, #___gatsby {
     width: 100%;
     /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
     font-family: 'Raleway', sans-serif;
+    min-width: 0px;
+    display: box;
 }
 
 html {
