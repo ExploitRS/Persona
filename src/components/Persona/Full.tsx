@@ -3,6 +3,7 @@ import { icons, bioIconSize } from '../../utils/font';
 import { getImage, IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import Status from './Status';
+
 import { Contact } from './Status/Contacts';
 import { SkillProps } from './Status/Skill';
 
@@ -30,68 +31,100 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <div className='justify-center w-full max-w-xl m-auto min-w-0 rounded-lg demo-1'>
-                <div className='flex flex-col py-10 content'>
-                    <div className='flex flex-row flex-shrink-0 space-x-8'>
-                        <div className='flex-shrink-0 w-[150px] h-[150px] rounded-full glitch'>
-                            <GatsbyImage image={avt} className='rounded-full placeholder:blur' />
+            <svg
+                viewBox="3 3 10 10"
+                xmlns="http://www.w3.org/2000/svg"
+                className='absolute '>
+                {/* xmlns="http://www.w3.org/1999/xlink"> */}
+                <defs>
+                    <radialGradient id="myGradient">
+                        <stop offset="10%" stop-color="#E3D7D1" />
+                        <stop offset="95%" stop-color="transparent" />
+                    </radialGradient>
+                </defs>
+                <circle cx="5" cy="5" r="4" fill="url('#myGradient')" />
+            </svg>
+            <div className='min-h-screen rounded-lg backdrop-blur-ios bg-black/[.2]'>
+                {/* <svg width="1258" height="1256" viewBox="0 0 1258 1256" fill="none" className="absolute -bottom-4 z-20 h-full w-full transform scale-125 select-none pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_423_2552)">
+                        <path d="M1094 399.581C789.759 633.875 177.822 1106.17 164 1121L720.648 164L1094 399.581Z" fill="url(#paint0_linear_423_2552)" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_423_2552" x="0" y="0" width="1258" height="1285" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="82" result="effect1_foregroundBlur_423_2552" />
+                        </filter>
+                        <linearGradient id="paint0_linear_423_2552" x1="149.727" y1="1138.77" x2="943.659" y2="331.272" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00BFFF" />
+                            <stop offset="1" stop-color="#4A58FB" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg> */}
+                <div className='justify-center w-full max-w-xl m-auto min-w-0 rounded-lg demo-1'>
+                    <div className='flex flex-col py-10 content'>
+                        <div className='flex flex-row flex-shrink-0 space-x-3 md:space-x-8'>
+                            {/* <div className='w-[150px] h-[150px]' style={{ backgroundImage: 'radial-gradient(#e66465, #9198e5)' }} ></div> */}
+                            <div className='flex-shrink-0 w-32 h-32 -full glitch'>
+                                <GatsbyImage image={avt} className='rounded-full placeholder:blur' />
+                            </div>
+                            <div className=''>
+                                <div className='flex flex-row flex-wrap space-x-4 items-center'>
+                                    <h1 className='text-white mb-1 text-xl md:text-3xl lg:text-3xl font-semibold content__title'>{ p.alias }</h1>
+                                    <h3 className='text-sm md:text-lg text-gray-200 font-mono font-semibold'>{ `@${ p.username }` }</h3>
+                                </div>
+                                <div>
+                                    <h2 className='text-white text-sm md:text-lg content__text'>{ p.bio }</h2>
+                                </div>
+                            </div>
                         </div>
-                        <div className=''>
-                            <div className='flex flex-row flex-wrap space-x-4 items-center'>
-                                <h1 className='text-white mb-1 text-xl md:text-3xl lg:text-3xl font-semibold content__title'>{ p.alias }</h1>
-                                <h3 className='text-sm md:text-lg text-gray-200 font-mono font-semibold'>{ `@${ p.username }` }</h3>
-                            </div>
-                            <div>
-                                <h2 className='text-white text-lg content__text'>{ p.bio }</h2>
-                            </div>
+                        <div className='flex flex-col flex-wrap text-white mt-5 w-full px-4 rounded-lg bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
+                            { p.exploitrs && (
+                                <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full w-full py-4 space-x-2 border-b border-glass-card-border'>
+                                    <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
+                                        { icons['verified'] }
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <h4 className='text-gray-400 leading-5'>Exploit.RS</h4>
+                                        <h4 className='text-white leading-5'>{ p.exploitrs }</h4>
+                                    </div>
+                                </div>
+                            )}
+                            { p.location && (
+                                <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full py-4 space-x-2 border-b border-glass-card-border'>
+                                    <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
+                                        <FontAwesomeIcon icon={icons['location']} className='' style={ bioIconSize } />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <h4 className='text-gray-400 leading-5'>Location</h4>
+                                        <h4 className='text-white leading-5'>{ p.location }</h4>
+                                    </div>
+                                </div>
+                            )}
+                            { p.org && (
+                                <h4 className='text-wild-kingdom-text-green'>{ p.org }</h4>
+                            )}
+                            { p.company && (
+                                <h4 className='text-wild-kingdom-text-green'>{ p.company }</h4>
+                            )}
+                            { p.education && (
+                                <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full space-x-2 py-4'>
+                                    <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
+                                        <FontAwesomeIcon icon={icons['education']} className='' style={ bioIconSize } />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <h4 className='text-gray-400 leading-5'>Education</h4>
+                                        <h4 className='text-white leading-5'>{ p.education }</h4>
+                                    </div>
+                                </div>
+                            )}
                         </div>
-                    </div>
-                    <div className='flex flex-col flex-wrap text-white mt-5 w-full px-4 rounded-lg bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
-                        { p.exploitrs && (
-                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full w-full py-4 space-x-2 border-b border-glass-card-border'>
-                                <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
-                                    { icons['verified'] }
-                                </div>
-                                <div className='flex flex-col'>
-                                    <h4 className='text-gray-400 leading-5'>Exploit.RS</h4>
-                                    <h4 className='text-white leading-5'>{ p.exploitrs }</h4>
-                                </div>
-                            </div>
-                        )}
-                        { p.location && (
-                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full py-4 space-x-2 border-b border-glass-card-border'>
-                                <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
-                                    <FontAwesomeIcon icon={icons['location']} className='' style={ bioIconSize } />
-                                </div>
-                                <div className='flex flex-col'>
-                                    <h4 className='text-gray-400 leading-5'>Location</h4>
-                                    <h4 className='text-white leading-5'>{ p.location }</h4>
-                                </div>
-                            </div>
-                        )}
-                        { p.org && (
-                            <h4 className='text-wild-kingdom-text-green'>{ p.org }</h4>
-                        )}
-                        { p.company && (
-                            <h4 className='text-wild-kingdom-text-green'>{ p.company }</h4>
-                        )}
-                        { p.education && (
-                            <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full space-x-2 py-4'>
-                                <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
-                                    <FontAwesomeIcon icon={icons['education']} className='' style={ bioIconSize } />
-                                </div>
-                                <div className='flex flex-col'>
-                                    <h4 className='text-gray-400 leading-5'>Education</h4>
-                                    <h4 className='text-white leading-5'>{ p.education }</h4>
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
+                { p.contacts && (
+                    <Status contacts={ p.contacts } skills={ p.skills } />
+                )}
             </div>
-            { p.contacts && (
-                <Status contacts={ p.contacts } skills={ p.skills } />
-            )}
         </>
     )
 } 
