@@ -40,7 +40,7 @@ html, body, #___gatsby {
     width: 100%;
     /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
     font-family: 'Raleway', sans-serif;
-    min-width: 0px;
+    min-width: 360px;
     display: box;
 }
 
@@ -68,9 +68,9 @@ body {
     /* background-color: #111927; */
     background-color: #000000;
     background-image: 
-        radial-gradient(at 0% 0%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        /* radial-gradient(at 0% 0%, hsl(162.00, 77%, 40%) 0, transparent 59%),  */
         /* radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%); */
-        radial-gradient(at 82% 65%, hsl(218.18, 0%, 0%) 0, transparent 55%);
+        radial-gradient(at 0% 0%, hsl(0, 0%, 100%) 0, transparent 55%);
 }
 
 .bg-test {
