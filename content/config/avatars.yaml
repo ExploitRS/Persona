@@ -29,6 +29,11 @@
       id: 'nonnil'
       url: 'https://github.com/nonnil'
       quickly: true
+    - kind: 'discord'
+      label: 'Discord'
+      id: '@0100.0001'
+      url: 'https://notabug.org/nl'
+      quickly: false
     - kind: 'notabug'
       label: 'NotABug'
       id: 'nl'

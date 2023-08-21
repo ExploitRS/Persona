@@ -6,6 +6,7 @@ import {
     faRust,
     faGolang,
     faMicrosoft,
+    faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faEnvelope,
@@ -128,6 +129,7 @@ export const icons = {
     map: faMapLocationDot,
     education: faGraduationCap,
     verified: iconfinder("verified"),
+    discord: faDiscord,
 }
 
 export const skillIcons = {

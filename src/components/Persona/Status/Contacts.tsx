@@ -41,6 +41,7 @@ const Icon = {
     ["notabug"]: <SimpleIcon name="git" />,
     ["telegram"]: <FontAwesomeIcon className="text-3xl" icon={icons['telegram']} style={ contactIconSize } />,
     ["github"]: <FontAwesomeIcon className="text-3xl" icon={icons['github']} style={ contactIconSize } />,
+    ["discord"]: <FontAwesomeIcon className="text-3xl" icon={icons['discord']} style={ contactIconSize } />,
 }
 
 const Contacts: React.FC<ContactsProps> = (props) => {
