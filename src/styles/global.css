@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("glitch.css");
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 
 @layer base {
     :root {
@@ -40,6 +42,20 @@ html, body, #___gatsby {
     width: 100%;
     /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
     font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
+    /* font-family: -apple-system-body;
+    font-family: -apple-system-headline;
+    font-family: -apple-system-subheadline;
+    font-family: -apple-system-caption1;
+    font-family: -apple-system-caption2;
+    font-family: -apple-system-footnote;
+    font-family: -apple-system-short-body;
+    font-family: -apple-system-short-headline;
+    font-family: -apple-system-short-subheadline;
+    font-family: -apple-system-short-caption1;
+    font-family: -apple-system-short-footnote;
+    font-family: -apple-system-tall-body; */
     min-width: 360px;
     display: box;
 }
