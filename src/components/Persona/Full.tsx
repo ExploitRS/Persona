@@ -31,36 +31,21 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <svg
-                viewBox="3 3 10 10"
-                xmlns="http://www.w3.org/2000/svg"
-                className='absolute '>
-                {/* xmlns="http://www.w3.org/1999/xlink"> */}
-                <defs>
-                    <radialGradient id="myGradient">
-                        <stop offset="10%" stop-color="#E3D7D1" />
-                        <stop offset="95%" stop-color="transparent" />
-                    </radialGradient>
-                </defs>
-                <circle cx="5" cy="5" r="4" fill="url('#myGradient')" />
-            </svg>
-            <div className='min-h-screen rounded-lg backdrop-blur-ios bg-black/[.2]'>
-                {/* <svg width="1258" height="1256" viewBox="0 0 1258 1256" fill="none" className="absolute -bottom-4 z-20 h-full w-full transform scale-125 select-none pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_f_423_2552)">
-                        <path d="M1094 399.581C789.759 633.875 177.822 1106.17 164 1121L720.648 164L1094 399.581Z" fill="url(#paint0_linear_423_2552)" />
-                    </g>
+            <div className=' absolute overflow-hidden justify-center items-center flex flex-col max-w-[1000px]'>
+                <svg
+                    viewBox="-1 -1 5 5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=' select-none pointer-events-none w-full h-full'>
                     <defs>
-                        <filter id="filter0_f_423_2552" x="0" y="0" width="1258" height="1285" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                            <feGaussianBlur stdDeviation="82" result="effect1_foregroundBlur_423_2552" />
-                        </filter>
-                        <linearGradient id="paint0_linear_423_2552" x1="149.727" y1="1138.77" x2="943.659" y2="331.272" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00BFFF" />
-                            <stop offset="1" stop-color="#4A58FB" stop-opacity="0" />
-                        </linearGradient>
+                        <radialGradient id="myGradient">
+                            <stop offset="0%" stop-color="#E3D7D1" />
+                            <stop offset="95%" stop-color="transparent" />
+                        </radialGradient>
                     </defs>
-                </svg> */}
+                    <circle cx="5%" cy="5%" r="4" fill="url('#myGradient')" className='scale-150' />
+                </svg>
+            </div>
+            <div className='min-h-screen rounded-lg bg-black/[.2] backdrop-blur-ios'>
                 <div className='justify-center w-full max-w-xl m-auto min-w-0 rounded-lg demo-1'>
                     <div className='flex flex-col py-10 content'>
                         <div className='flex flex-row flex-shrink-0 space-x-3 md:space-x-8'>
