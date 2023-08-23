@@ -16,17 +16,17 @@ const PersonaAbout: React.FC<PersonaAboutProps> = (props: PersonaAboutProps) => 
         <>
             { prsn.is_public ? (
                 <Link to={`/${prsn.username}`} >
-                    <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
+                    <div className='bg-black/[.2] backdrop-blur-ios border border-solid border-glass-card-border max-w-sd mb-4 p-4 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 items-center content-cneter'>
                         <div className='flex'>
                             <div className='flex-shrink-0'>
                                 <GatsbyImage image={img} alt={prsn.username} class='rounded-full' />
                             </div>
-                            <h4 className='text-cy-blue-light flex-1 min-w-0 mx-4 flex items-center font-bold'>{ `@${prsn.username}` }</h4>
+                            <h4 className='text-white flex-1 min-w-0 mx-4 flex items-center font-bold'>{ `@${prsn.username}` }</h4>
                         </div>
                     </div>
                 </Link>
             ) : (
-                <div className='bg-wild-kingdom-front-green max-w-sd mb-4 p-4 rounded-lg shadow gap-4 items-center content-cneter'>
+                <div className='bg-black/[.2] backdrop-blur-ios border border-solid border-glass-card-border max-w-sd mb-4 p-4 rounded-lg shadow gap-4 items-center content-cneter'>
                     <div className='flex'>
                         <div className='flex-shrink-0'>
                             {/* <div className='rounded-full w-[50px] h-[50px]'></div> */}
