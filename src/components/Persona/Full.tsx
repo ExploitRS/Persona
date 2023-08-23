@@ -66,7 +66,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                         <div className='flex flex-col flex-wrap text-white mt-5 w-full px-4 rounded-lg bg-blend-hue backdrop-blur-ios bg-black/[.2] border border-solid border-glass-card-border '>
                             { p.exploitrs && (
                                 <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full w-full py-4 space-x-2 border-b border-glass-card-border'>
-                                    <div className='p-2 backdrop-blur-xl bg-black/30 rounded-full'>
+                                    <div className='p-2 backdrop-blur-xl bg-white/10 rounded-full'>
                                         { icons['verified'] }
                                     </div>
                                     <div className='flex flex-col'>
@@ -77,8 +77,8 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             )}
                             { p.location && (
                                 <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full py-4 space-x-2 border-b border-glass-card-border'>
-                                    <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
-                                        <FontAwesomeIcon icon={icons['location']} className='' style={ bioIconSize } />
+                                    <div className='backdrop-blur-sm bg-white/10 rounded-full flex justify-center'>
+                                        <FontAwesomeIcon icon={icons['location']} className='w-6 h-6 p-2'/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <h4 className='text-gray-400 leading-5'>Location</h4>
@@ -94,8 +94,8 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
                             )}
                             { p.education && (
                                 <div className='flex flex-row flex-shrink-0 flex-grow-0 basis-full space-x-2 py-4'>
-                                    <div className='p-2 backdrop-blur-sm bg-black/30 rounded-full'>
-                                        <FontAwesomeIcon icon={icons['education']} className='' style={ bioIconSize } />
+                                    <div className='backdrop-blur-sm bg-white/10 rounded-full flex justify-center'>
+                                        <FontAwesomeIcon icon={icons['education']} className='w-6 h-6 p-2'/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <h4 className='text-gray-400 leading-5'>Education</h4>
