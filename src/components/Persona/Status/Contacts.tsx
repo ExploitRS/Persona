@@ -49,9 +49,9 @@ const Contacts: React.FC<ContactsProps> = (props) => {
 
     return(
         <>
-            <h1 className="text-white font-bold text-2xl md:text-4xl tracking-tight">Social Accounts & Contacts</h1>
-            <div className="pt-4 text-white">
-                <div className="flex max-w-screen-xl flex-wrap mx-auto ">
+            <h1 className="text-white font-bold text-2xl md:text-4xl leading-6 tracking-tight my-3 py-2">Social Accounts & Contacts</h1>
+            <div className="text-white">
+                <div className="flex max-w-screen-xl flex-wrap mx-auto">
                     { cons.map((con) => (
                         <a href={con.url} target="_blank" className="flex-grow-0 flex-shrink-0 basis-1/2 mb-2">
                             <div className="text-white flex flex-row space-x-2 justify-start items-center">
