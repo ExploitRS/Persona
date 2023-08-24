@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 @import url("glitch.css");
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 
 @layer base {
     :root {
+        --glass-card-border: rgba(255, 255, 255, 0.125);
+
+        --language-rust: 222 165 132;
+        --language-nim: 255 194 0;
+        --language-elm: 96 181 204;
+        --language-go: 0 173 216;
+        --language-typescript: 49 120 198;
+        --brand-hackerone: 249 34 163;
+        --brand-malware: 238 106 106;
+
         --cy-red-light: #ff2a6d;
         --cy-blue-light: #d1f7ff;
         --cy-blue-mid: #005678;
@@ -28,22 +40,59 @@
 html, body, #___gatsby {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
+    /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
     font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
+    /* font-family: -apple-system-body;
+    font-family: -apple-system-headline;
+    font-family: -apple-system-subheadline;
+    font-family: -apple-system-caption1;
+    font-family: -apple-system-caption2;
+    font-family: -apple-system-footnote;
+    font-family: -apple-system-short-body;
+    font-family: -apple-system-short-headline;
+    font-family: -apple-system-short-subheadline;
+    font-family: -apple-system-short-caption1;
+    font-family: -apple-system-short-footnote;
+    font-family: -apple-system-tall-body; */
+    min-width: 360px;
+    display: box;
 }
 
 html {
     margin: 0;
     padding: 0;
     border: none;
-    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
+    /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
 }
 
 body {
     height:100%;
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark));
+    padding: 0;
+    background-color: #000000;
+    /* background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.18, 0%, 0%) 0, transparent 55%); */
+}
+
+.wallpaper {
+    /* background-image: linear-gradient(to right, var(--wild-kingdom-bg-green-light), var(--wild-kingdom-bg-green-dark)); */
+    /* background-color: #000000; */
+    /* background-color: #111927; */
+    background-color: #000000;
+    background-image: 
+        /* radial-gradient(at 0% 0%, hsl(162.00, 77%, 40%) 0, transparent 59%),  */
+        /* radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%); */
+        radial-gradient(at 0% 0%, hsl(0, 0%, 100%) 0, transparent 55%);
+}
+
+.bg-test {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 main {

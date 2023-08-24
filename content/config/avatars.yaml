@@ -3,16 +3,17 @@
   bio: 'Looking for a part-time engineering job.'
   avatar: '../avatars/nil.png'
   location: 'Tokyo ⇄ The Wired'
+  exploitrs: 'nil'
   org: ''
   company: ''
-  education: 'Keio Uni'
+  education: 'Keio University'
   is_public: true
   contacts:
     - kind: 'email'
       label: 'E-mail'
-      id: 'nullopt_t@proton.me'
-      url: 'mailto:nullopt_t@proton.me'
-      quickly: true
+      id: 'nil@exploit.rs'
+      url: 'mailto:nil@exploit.rs'
+      quickly: false 
     - kind: 'telegram'
       label: 'Telegram'
       id: 'unittype'
@@ -22,12 +23,17 @@
       label: 'XMPP'
       id: 'unsafe@xmpp.is'
       url: 'xmpp:unsafe@xmpp.is'
-      quickly: true
+      quickly: false
     - kind: 'github'
       label: 'GitHub'
       id: 'nonnil'
       url: 'https://github.com/nonnil'
-      quickly: true
+      quickly: false
+    - kind: 'discord'
+      label: 'Discord'
+      id: '@0100.0001'
+      url: 'https://discordlookup.com/user/693368957213605929'
+      quickly: false
     - kind: 'notabug'
       label: 'NotABug'
       id: 'nl'
@@ -55,7 +61,7 @@
       label: 'TypeScript'
       description: 'Used for Front-end'
     - kind: 'security'
-      approach: 'penetest'
+      approach: 'pentest'
       label: 'Penetration test'
       description: 'I have reported several vulnerabilities to companies...'
     - kind: 'security'
@@ -68,8 +74,8 @@
   bio: 'Nagaxニャン'
   is_public: true
   avatar: '../avatars/power.jpeg'
-  location: 'Darkness'
-  education: 'Nursing School'
+  location: 'ノックノック　ひとりぼっち'
+  education: 'Nursing'
   org: ''
   company: ''
   contacts:

@@ -12,7 +12,6 @@ export interface PersonaFullContainerQueryData {
 
 const PersonaFullContainer = ({ data } ) => {
     const prsn = data.avatarsYaml
-    console.log(data.avatarsYaml.avatar.childImageSharp.fluid)
 
     return (
         <Layout>
@@ -28,6 +27,7 @@ export const pageQuery = graphql`
             username
             alias
             bio 
+            exploitrs
             location
             org
             company
