@@ -16,6 +16,7 @@ import {
     faLocationDot,
     faLocationPin,
     faGraduationCap,
+    faStar,
 } from '@fortawesome/free-solid-svg-icons';
 
 import React from 'react';
@@ -130,6 +131,7 @@ export const icons = {
     education: faGraduationCap,
     verified: iconfinder("verified"),
     discord: faDiscord,
+    star: faStar,
 }
 
 export const skillIcons = {
