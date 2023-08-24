@@ -27,7 +27,7 @@ export interface Contact {
     label: string,
     id: string,
     url?: string,
-    quickly?: string,
+    quickly?: boolean,
 }
 
 export interface Warp {
@@ -49,7 +49,10 @@ const Contacts: React.FC<ContactsProps> = (props) => {
 
     return(
         <>
-            <h1 className="text-white font-bold text-2xl md:text-4xl leading-6 tracking-tight my-3 py-2">Social Accounts & Contacts</h1>
+            <div className="my-3">
+                <h1 className="text-white font-bold text-2xl md:text-4xl leading-6 tracking-tight py-2">Social Accounts & Contacts</h1>
+                <h2 className="text-gray-400 text-lg md:text-xl">I may respond quickly on the accounts having "star".</h2>
+            </div>
             <div className="text-white">
                 <div className="flex max-w-screen-xl flex-wrap mx-auto">
                     { cons.map((con) => (
@@ -58,7 +61,12 @@ const Contacts: React.FC<ContactsProps> = (props) => {
                                 {/* <FontAwesomeIcon className="text-3xl" icon={icons[con.kind]} style={ contactIconSize } /> */}
                                 { Icon[con.kind] }
                                 <div>
-                                    <h3 className="text-white text-md font-bold">{ con.label }</h3>
+                                    <div className="flex flex-row space-x-1">
+                                        <h3 className="text-white text-md font-bold">{ con.label }</h3>
+                                        { con.quickly ? <span className="m-0 p-0 content-center justify-center items-center">
+                                            <FontAwesomeIcon icon={ icons['star'] } className="p-0 w-4 h-4"/>
+                                        </span> : <></> }
+                                    </div>
                                     <h4 className="text-gray-400 text-sm font-semibold font-mono">{`${ con.id }`}</h4>
                                 </div>
                             </div>
