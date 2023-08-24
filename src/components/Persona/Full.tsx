@@ -31,7 +31,7 @@ const PersonaFull: React.FC<PersonaFullProps> = (props: PersonaFullProps) => {
 
     return (
         <>
-            <div className='absolute overflow-hidden justify-center items-center flex flex-col max-w-[1000px] rounded-full'>
+            <div className='absolute overflow-hidden justify-center items-center flex flex-col max-w-[1000px] rounded-lg'>
                 <svg
                     viewBox="-1 -1 5 5"
                     xmlns="http://www.w3.org/2000/svg"
