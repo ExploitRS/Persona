@@ -13,7 +13,7 @@
       label: 'E-mail'
       id: 'nil@exploit.rs'
       url: 'mailto:nil@exploit.rs'
-      quickly: true
+      quickly: false 
     - kind: 'telegram'
       label: 'Telegram'
       id: 'unittype'
@@ -23,12 +23,12 @@
       label: 'XMPP'
       id: 'unsafe@xmpp.is'
       url: 'xmpp:unsafe@xmpp.is'
-      quickly: true
+      quickly: false
     - kind: 'github'
       label: 'GitHub'
       id: 'nonnil'
       url: 'https://github.com/nonnil'
-      quickly: true
+      quickly: false
     - kind: 'discord'
       label: 'Discord'
       id: '@0100.0001'
